@@ -1,10 +1,11 @@
 version: '3'
 services:
-  node8:
-    container_name: node8-axios
+  line-notify:
+    container_name: line-notify
     build: .
     image: ses2/node:8-axios
+    environment:
+      - LINE_TOKEN=$LINE_TOKEN
     tty: true
     volumes:
       - ./app:/app
-    

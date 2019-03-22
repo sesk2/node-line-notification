@@ -8,25 +8,22 @@ docker-compose ps
 
 ## run node test.js
 ```
-docker exec -it node8-axios node test.js
+docker exec -it line-notify node test.js
 ```
 
 ## login container
 ```
-docker exec -it node8-axios /bin/sh
+docker exec -it line-notify /bin/sh
 ```
 
-## run node apps
-1. put app files in ./app .
-2. run app by a command below.
+## run line notify
 ```
-docker exec -it node8 main.js
+docker exec -it line-notify index.js
 ```
-** you can change a argument [main.js]. **
 
 ## check logs
 ```
-docker logs node8-axios
+docker logs line-notify
 ```
 
 
